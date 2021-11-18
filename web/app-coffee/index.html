@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Julio's Coffee</title>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.min.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="css/index.css">
+
+  <!--Import jQuery before materialize.min.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script type="text/javascript"  src="js/index.js"></script>
+</head>
+
+<body>
+  <header class="valign-wrapper grey darken-3">
+    <img src="img/croissant.svg" alt="Logo"/>
+    <h4 class="">Julio's Coffee</h4>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h5>Resumo do pedido:</h5>
+
+          <ol>
+
+          </ol>
+
+          <input type="number">
+
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Voltar</a>
+
+          <a id="confirm" href="#!" class="waves-effect waves-green btn-flat ">Confirmar</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s4"><a class="active" href="#comidas">Comidas</a></li>
+            <li class="tab col s4"><a href="#bebidas">Bebidas</a></li>
+          </ul>
+        </div>
+        <div id="comidas" class="col s12">
+          <div class="collection with-header">
+            <li class="collection-header"><h5>Doces</h5></li>
+            <a href="#!" class="collection-item"><span></span>Mini tortinhas de nozes</a>
+            <a href="#!" class="collection-item"><span></span>Gateau de Chocolate</a>
+            <a href="#!" class="collection-item"><span></span>Torta de Brigadeiro</a>
+            <a href="#!" class="collection-item"><span></span>Brownie com Amendoas ou Simples</a>
+            <a href="#!" class="collection-item"><span></span>Bolo (Laranja, limão, chocolate)</a>
+          </div>
+
+          <div class="collection with-header">
+            <li class="collection-header"><h5>Salgados</h5></li>
+            <a href="#!" class="collection-item"><span></span>Pão de Queijo</a>
+            <a href="#!" class="collection-item"><span></span>Empanada</a>
+            <a href="#!" class="collection-item"><span></span>Pasteis</a>
+            <a href="#!" class="collection-item"><span></span>Torrada Simples</a>
+            <a href="#!" class="collection-item"><span></span>Croissant com Geleia e Manteiga</a>
+          </div>
+
+          <div class="collection with-header">
+            <li class="collection-header"><h5>Sorvetes</h5></li>
+            <a href="#!" class="collection-item"><span></span>Taça de Sorvete</a>
+            <a href="#!" class="collection-item"><span></span>Milk Shake</a>
+            <a href="#!" class="collection-item"><span></span>Sundae</a>
+          </div>
+        </div>
+        <div id="bebidas" class="col s12">
+          <div class="collection with-header">
+            <li class="collection-header"><h5>Cafés</h5></li>
+            <a href="#!" class="collection-item"><span></span>Expresso</a>
+            <a href="#!" class="collection-item"><span></span>Cappuccino</a>
+            <a href="#!" class="collection-item"><span></span>Mocaccino</a>
+            <a href="#!" class="collection-item"><span></span>Café "Latte"</a>
+            <a href="#!" class="collection-item"><span></span>Duplo Expresso</a>
+          </div>
+
+          <div class="collection with-header">
+            <li class="collection-header"><h5>Outras bebidas</h5></li>
+            <a href="#!" class="collection-item"><span></span>Água Mineral (300ml)</a>
+            <a href="#!" class="collection-item"><span></span>Refrigerante (350ml)</a>
+            <a href="#!" class="collection-item"><span></span>Suco</a>
+            <a href="#!" class="collection-item"><span></span>Mate (300ml)</a>
+            <a href="#!" class="collection-item"><span></span>Licores</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="row">
+      <div class="col s6 center-align">
+        <a id="clear" class="btn-floating btn-medium waves-effect waves-light red"><i class="material-icons">clear</i></a>
+      </div>
+
+      <div class="col s6 center-align">
+        <a id="check" class="btn-floating btn-medium waves-effect waves-light modal-trigger green"><i class="material-icons">check</i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link rel="stylesheet" href="style/style.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+  <script type="text/javascript"  src="js/master.js"></script>
+
+  <script type="text/javascript">
+  window.onload=function(){
+    escreveTotal();
+  }
+  </script>
+
+</head>
+<!-- <body onload="escreveValorTotal()"> -->
+<body>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h5>Confirmar Exclusão</h5>
+      <p>Tem certeza que deseja excluir este item?</p>
+    </div>
+    <div class="modal-footer">
+      <a id="nao" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">
+        Não
+      </a>
+      <a id="sim" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">
+        Sim
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row valign-wrapper">
+      <div class="col l4">
+        <img src="img/images.png" style="max-width:250px">
+      </div>
+      <div class="col l8">
+        <p>
+          <h5>
+            Carrinho de Compras
+          </h5>
+        </p>
+      </div>
+    </div>
+
+    <table class="bordered highlight">
+      <tr>
+        <th colspan="2">Itens</th>
+        <th></th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+        <th>Subtotal</th>
+        <th class="hidden"></th>
+      </tr>
+      <tr class="produto">
+        <td>
+          <!-- <p> -->
+          <img src="img/1LlcgWKh__jzqodxR2OcWo8YohpsnMDP_jXYwOg2gA8_small.jpg" alt="">
+          <!-- </p> -->
+        </td>
+        <td class="descricao-produto">
+          <p>Métricas Ágeis: Obtenha melhores resultados em sua equipe</p>
+          <input type="checkbox" id="checkbox1" name="embalagem" value="sim" onchange="adicionaEmbalagem(this.parentNode.parentNode.id)">
+          <label for="checkbox1">Adicionar embalagem para presente?</label>
+        </td>
+        <td>
+          <!-- Cria um Botao para exluir o Item - O atributo href especifica qual Modal sera aberto -->
+          <a id="botao1" class="btn-floating btn-large waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons">delete</i></a>
+        </td>
+        <td>
+          <p class="preco-unitario">
+            R$ 29.90
+          </p>
+        </td>
+        <td class="quantidade">
+          <input class="num-itens" type="number" name="quantidade" min="1" max="10" value="1" onchange="atualizaTotais(this.parentNode.parentNode.id)">
+        </td>
+        <td class="total-unitario">
+          R$ 29.90
+        </td>
+        <td class="hidden embalagem">
+          0
+        </td>
+    </tr>
+    <tr class="produto">
+      <td>
+        <img src="img/FAayv1TsEfesCTFiQCfFPXiDEogIbOuiuScwPCpGED8_small.jpg" alt="">
+      </td>
+      <td class="descricao-produto">
+        <p>Orientação a Objetos: Aprenda seus conceitos e suas aplicabilidades de forma efetiva</p>
+        <input type="checkbox" id="checkbox2" name="embalagem" value="sim" onchange="adicionaEmbalagem(this.parentNode.parentNode.id)">
+        <label for="checkbox2">Adicionar embalagem para presente?</label>
+      </td>
+      <td>
+        <a id="botao2" class="btn-floating btn-large waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons">delete</i></a>
+      </td>
+      <td>
+        <p class="preco-unitario">
+          R$ 29.90
+        </p>
+      </td>
+      <td class="quantidade">
+        <input class="num-itens" type="number" name="quantidade" min="1" max="10" value="1" onchange="atualizaTotais(this.parentNode.parentNode.id)">
+      </td>
+      <td class="total-unitario">
+        R$ 29.90
+      </td>
+      <td class="hidden embalagem">
+        0
+      </td>
+  </tr>
+  <tr class="produto">
+    <td>
+      <img src="img/zhQRY_vRi2-piaw5QkZpc552fcVQhN6fe4zLRb4fXV8_small.jpg" alt="">
+    </td>
+    <td class="descricao-produto">
+      <p>Segurança em aplicações Web</p>
+      <input type="checkbox" id="checkbox3" name="embalagem" value="sim" onchange="adicionaEmbalagem(this.parentNode.parentNode.id)">
+      <label for="checkbox3">Adicionar embalagem para presente?</label>
+    </td>
+    <td>
+      <a id="botao3" class="btn-floating btn-large waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons">delete</i></a>
+    </td>
+    <td>
+      <p class="preco-unitario">
+        R$ 29.90
+      </p>
+    </td>
+    <td class="quantidade">
+      <input class="num-itens" type="number" name="quantidade" min="1" max="10" value="1" onchange="atualizaTotais(this.parentNode.parentNode.id)">
+    </td>
+    <td class="total-unitario">
+      R$ 29.90
+    </td>
+    <td class="hidden embalagem">
+      0
+    </td>
+</tr>
+</table>
+<div class="row">
+  <div class="col m11">
+    <p class="right-align">
+      <b>Total:</b>
+    </p>
+  </div>
+  <div class="col m1">
+    <p id="valor-total" class="right-align">
+
+    </p>
+  </div>
+</div>
+
+<footer class="page-footer teal lighten-2">
+  <div class="footer-copyright">
+    <div class="container">
+      © 2017 ADS - IFRS
+      <a class="grey-text text-lighten-4 right" href="#!">Exemplo JavaScript</a>
+    </div>
+  </div>
+</footer>
+<div class="row">
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+  var produtos = document.getElementsByClassName("produto");
+
+  for (var i = 1; i <= produtos.length; i++) {
+    produtos[i-1].setAttribute("id", i);
+  }
+</script>
+
+</body>
+</html>

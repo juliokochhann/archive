@@ -1,0 +1,68 @@
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
+}
+
+@font-face {
+    font-family: 'Quinzey_Bold'; /*a name to be used later*/
+    src: url('../fonts/quinzey/Quinzey_Bold.otf'); /*URL to font*/
+}
+
+img {
+  margin-right: 10px;
+}
+
+input {
+  border: 1px solid #fafafa !important;
+  padding-left: 10px !important;
+}
+
+li.active {
+  background-color: #1976d2 !important;
+}
+
+.button {
+  height: 75px;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  font-family: Quinzey_Bold;
+  padding-left: 5px;
+  border-bottom: 4px solid #1e88e5;
+  color: white;
+  z-index: 10;
+}
+
+/*.input-field label {
+  color: black !important;
+}
+
+.input-field input[type=text]:focus + label {
+  color: black !important;
+}*/
+
+.label {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.row {
+  margin: 0;
+}
+
+.row .input-field input:focus {
+  border-bottom: 2px solid #1976d2 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.section {
+  height: 200px;
+}

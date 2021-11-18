@@ -1,0 +1,9 @@
+Quantidade de alunos: 4
+Quantidade de professores: 4
+
+Lista de Professores e Cadeiras ministradas:
+
+Professor: Guilherme 	 Cadeira: DSII
+Professor: Ricardo 	 Cadeira: Banco de Dados
+Professor: Felipe 	 Cadeira: DSI
+Professor: Rogério 	 Cadeira: Banco de Dados II

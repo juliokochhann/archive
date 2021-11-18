@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <p></p>
+  <div class="container">
+    <div class="jumbotron">
+      <p>
+        <h2 class="text-center">Sistema de Controle de Estacionamento</h2>
+      </p>
+
+      <form action="web/login.php" method="post" data-toggle="validator" role="form">
+
+        <div class="form-group">
+          <label for="userName">Email</label>
+          <input type="email" class="form-control" name="userName" id="userName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="userPassword">Password</label>
+          <input type="password" class="form-control" name="userPassword" id="userPassword"
+          data-maxlength="6" maxlength="6" required>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Enviar">
+      </form>
+    </div>
+  </div>
+  <!-- BEGIN BLOCK_MENSAGEM_ERRO -->
+  <div class="container">
+    <div class="alert alert-danger">
+      {mensagem}
+    </div>
+  </div>
+  <!-- END BLOCK_MENSAGEM_ERRO -->
+  <!-- BEGIN BLOCK_VAZIO -->
+  <!-- END BLOCK_VAZIO -->
+</body>
+</html>

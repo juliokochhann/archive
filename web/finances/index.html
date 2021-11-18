@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Finances</title>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="css/index.css">
+
+  <!--Import jQuery before materialize.min.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <!-- jQuery DataTable -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+
+  <!-- script DataTable -->
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js" charset="utf-8"></script>
+
+  <!--Load the AJAX API-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script src="js/moment.min.js"></script>
+
+  <script type="text/javascript"  src="js/index.js"></script>
+</head>
+
+<body>
+  <header class="valign-wrapper">
+    <div class="title">
+      <h4><i class="material-icons">attach_money</i>Finances</h4>
+    </div>
+
+    <div class="menu">
+      <ul id="slide-out" class="side-nav">
+        <li><a href="#modal1" class="waves-effect waves-light modal-trigger"><i class="material-icons red-text">delete_forever</i>Excluir todos registros</a></li>
+        <li><a id="genChart" href="#!" class="waves-effect waves-light"><i class="material-icons blue-text">pie_chart</i>Gerar gráficos do mês</a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <main>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h5>Tem certeza que deseja excluir todas movimentações?</h5>
+        <p>Esta ação não pode ser desfeita.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">
+          Cancelar
+        </a>
+        <a id="sim" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">
+          Sim
+        </a>
+      </div>
+    </div>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="#!">Janeiro</a></li>
+      <li><a href="#!">Fevereiro</a></li>
+      <li><a href="#!">Março</a></li>
+      <li><a href="#!">Abril</a></li>
+      <li><a href="#!">Maio</a></li>
+      <li><a href="#!">Junho</a></li>
+      <li><a href="#!">Julho</a></li>
+      <li><a href="#!">Agosto</a></li>
+      <li><a href="#!">Setembro</a></li>
+      <li><a href="#!">Outubro</a></li>
+      <li><a href="#!">Novembro</a></li>
+      <li><a href="#!">Dezembro</a></li>
+    </ul>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown2' class='dropdown-content'>
+      <li><a href="#!">Todas</a></li>
+      <li><a href="#!">Alimentação</a></li>
+      <li><a href="#!">Educação</a></li>
+      <li><a href="#!">Esportes</a></li>
+      <li><a href="#!">Lazer</a></li>
+      <li><a href="#!">Moradia</a></li>
+      <li><a href="#!">Outros</a></li>
+      <li><a href="#!">Presentes</a></li>
+      <li><a href="#!">Roupas</a></li>
+      <li><a href="#!">Salário</a></li>
+      <li><a href="#!">Saúde</a></li>
+      <li><a href="#!">Transporte</a></li>
+      <li><a href="#!">Viagem</a></li>
+    </ul>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s6">
+          <!-- Dropdown Trigger -->
+          <a id="month-dropdown" class='dropdown-button btn blue darken-2' href='#' data-activates='dropdown1'>Drop Me!</a>
+        </div>
+
+        <div class="col s6">
+          <!-- Dropdown Trigger -->
+          <a id="cat-dropdown" class='dropdown-button btn blue darken-2' href='#' data-activates='dropdown2'>Drop Me!</a>
+        </div>
+      </div>
+
+      <p></p>
+
+      <table id="movimentacoes" class="display cell-border">
+        <thead>
+          <th class="hide">ID</th>
+          <th>Tipo</th>
+          <th>Categoria</th>
+          <th>Data</th>
+          <th>Valor</th>
+        </thead>
+
+        <tbody>
+          <!-- Populado pelo banco de dados -->
+        </tbody>
+      </table>
+    </main>
+
+    <footer class="page-footer">
+      <div class="row">
+        <div class="col s4">
+          Saldo do mês: R$
+        </div>
+
+        <div id="saldo" class="col s2">
+          0.00
+        </div>
+
+        <div class="col s6">
+          <div class="fixed-action-btn vertical click-to-toggle">
+            <a class="btn-floating btn-large blue darken-2">
+              <i class="material-icons">add</i>
+            </a>
+            <ul>
+              <li>Receita<a id="addReceita" class="btn-floating green"><i class="material-icons">add</i></a></li>
+              <li>Despesa<a id="addDespesa" class="btn-floating red"><i class="material-icons">add</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <!-- jQuery -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <!-- jQuery DataTable -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+
+  <!-- script DataTable -->
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js" charset="utf-8"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!--Load the AJAX API-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <link rel="stylesheet" href="master.css">
+
+  <script src="dataTable.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="container">
+    <form class="header">
+      <div class="form-group">
+        <label for="files">Escolha um arquivo JSON</label>
+        <input type="file" id="files" class="form-control-file" name="files[]"/>
+      </div>
+    </form>
+
+    <div class="col-lg-12">
+      <h2>Tabelas</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 section">
+        <table id="quant_compras_genero" class="display cell-border" width="100%">
+          <thead>
+            <tr>
+              <th>Homens</th>
+              <th>Mulheres</th>
+            </tr>
+          </thead>
+          <caption>Compras feitas por homens X por mulheres</caption>
+        </table>
+      </div>
+      <div class="col-lg-6 section">
+        <table id="quant_compras_tipo_pagamento" class="display cell-border" width="100%">
+          <thead>
+            <tr>
+              <th>Com Cartão</th>
+              <th>Com Dinheiro</th>
+            </tr>
+          </thead>
+          <caption>Compras com cartão X com dinheiro</caption>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 section">
+        <table id="quant_compras_pais" class="display cell-border" width="100%">
+          <thead>
+            <tr>
+              <th>Brazil</th>
+              <th>Canada</th>
+              <th>United States</th>
+              <th>United Kingdom</th>
+            </tr>
+          </thead>
+          <caption>Compras por país</caption>
+        </table>
+      </div>
+      <div class="col-lg-6 section">
+        <table id="quant_compras_faixa_valor" class="display cell-border" width="100%">
+          <thead>
+            <tr>
+              <th>$0 - $999</th>
+              <th>$1000 - $2499</th>
+              <th>$2500 - $5000</th>
+            </tr>
+          </thead>
+          <caption>Compras por faixa de valor</caption>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <h2>Gráficos</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <!--Div that will hold the pie chart-->
+        <div id="chart_quant_compras_pais" class="chart-section"></div>
+      </div>
+      <div class="col-lg-6">
+        <div id="chart_quant_compras_faixa_valor" class="chart-section"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

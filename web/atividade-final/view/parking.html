@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <p></p>
+  <div class="container">
+    <a href="../web/home.php" class="btn btn-default" role="button">
+      <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+    </a>
+
+    <div class="row">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><b>Veiculo</b></div>
+
+        <div class="panel-body">
+          <table class="table">
+            <!-- BEGIN BLOCK_VEICULO_ENTRANDO -->
+            <th>Placa</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Cor</th>
+            <th>Categoria</th>
+            <th>Hora de Entrada</th>
+            <th></th>
+
+            <tr>
+              <td>{placa_veiculo}</td>
+              <td>{marca_veiculo}</td>
+              <td>{modelo_veiculo}</td>
+              <td>{cor_veiculo}</td>
+              <td>{categoria_veiculo}</td>
+              <td>{hora_entrada}</td>
+            </tr>
+            <!-- END BLOCK_VEICULO_ENTRANDO -->
+
+            <!-- BEGIN BLOCK_VEICULO_SAINDO -->
+            <th>Placa</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Cor</th>
+            <th>Categoria</th>
+            <th>Hora de Entrada</th>
+            <th>Hora de Saída</th>
+            <th>Tempo Total</th>
+            <th>Preço</th>
+            <th></th>
+
+            <tr>
+              <td>{placa_veiculo}</td>
+              <td>{marca_veiculo}</td>
+              <td>{modelo_veiculo}</td>
+              <td>{cor_veiculo}</td>
+              <td>{categoria_veiculo}</td>
+              <td>{hora_entrada}</td>
+              <td>{hora_saida}</td>
+              <td>{tempo_total}</td>
+              <td>R$ {preco_total}</td>
+            </tr>
+            <!-- END BLOCK_VEICULO_SAINDO -->
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

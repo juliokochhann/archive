@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+		<title>Fale Conosco</title>
+		<link rel="stylesheet" href="../css/basic.css">
+		<link rel="stylesheet" href="../css/master.css">
+	</head>
+  
+	<body>
+		<div class="form-container vertical-container">
+			<form action="" method="post" class="col-12">
+				<p class="col-11 floatleft">
+					<label for="assunto">Qual o assunto da sua mensagem?</label></br>
+					<input type="text" id="assunto" name="assunto" autofocus="on"
+						size="70" maxlength="100"
+						x-moz-errormessage="Somente Letras"
+						required
+						placeholder="Escreva aqui"
+						pattern="[aA-zZ\s]+$">
+				</p>
+
+				<p>
+					<div class="col-5 floatleft">
+						<label for="nome">Nome:</label></br>
+						<input type="text" id="nome" name="nome"
+						 	size="30" maxlength="100"
+							x-moz-errormessage="Somente Letras"
+							required
+							placeholder="Nome Completo"
+							pattern="[aA-zZ\s]+$">
+					</div>
+					
+					<div class="floatright">
+						<label for="nascimento">Data de Nascimento:</label></br>
+					 	<input type="date" id="nascimento" name="nascimento"
+					 		required
+					 		placeholder="dd/mm/aaaa">
+					</div>
+				</p>
+
+				<p>
+					<div class="col-5 floatleft">
+						<label for="mail">Email:</label></br>
+					 	<input type="email" id="mail" name="mail"
+					 		size="30" maxlength="100"
+					 		x-moz-errormessage="Somente Letras e Caracteres Especiais"
+					 		required
+					 		placeholder="seuemail@email.com"
+					 		pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+					</div>
+					
+					<div class="floatright">
+						<label for="fone">Telefone:</label></br>
+						<input type="tel" id="fone" name="fone"
+							required placeholder="(xx) xxxxx-xxxx"
+							pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$">
+					</div>
+				</p>
+				
+				<div class="col-11 floatleft">
+					<p>
+						<label for="endereco">Endereço:</label></br>
+						<input type="text" id="endereco" name="endereco"
+							required placeholder="Digite seu endereço"
+							size="70" maxlength="100">
+					</p>
+				</div>
+				
+				<div class="col-5 floatleft">
+					<label for="cidade">Cidade:</label></br>
+					<input type="text" id="cidade" name="cidade"
+					 	size="30" maxlength="100"
+						x-moz-errormessage="Somente Letras"
+						required
+						placeholder="Digite sua cidade"
+						pattern="[aA-zZ\s]+$">
+				</div>
+
+				<div class="floatright">
+					<label for="estado">Estado</label></br>
+					<select>
+						<option value="rs">Rio Grande do Sul</option>
+						<option value="sp">São Paulo</option>
+					</select>
+				</div>
+				
+				<div class="floatleft">
+					<p>
+						<label for="texto">Comentários:</label></br>
+						<textarea id="texto" rows="8" cols="55"></textarea>
+					</p>
+				</div>
+				
+				<p class="floatright">
+					<input type="submit" value="Ok">
+				</p>
+			</form>
+		</div>
+	</body>
+</html>

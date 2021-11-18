@@ -1,0 +1,40 @@
+input[type=search]{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+th, td {
+  text-align: center;
+}
+
+caption {
+  caption-side: top;
+  text-align: center;
+  font-family: monospace;
+  font: Times;
+  font-size: 14px;
+}
+
+.header {
+  height: 50px;
+}
+
+.section {
+  height: 150px;
+}
+
+.chart-section {
+  height: 325px;
+  border: 1px solid black;
+}

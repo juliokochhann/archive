@@ -1,0 +1,80 @@
+/* For desktop: */
+/* Medidas utilizadas enquanto a largura da página for maior que 768px*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row {
+    clear: both;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    /* Medidas utilizadas enquanto a largura da página for menor que 768px*/
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .header-title {
+      text-align: center;
+      padding: auto;
+    }
+
+    .nav-bar {
+      text-align: center;
+      padding: auto;
+    }
+
+    .advertisement {
+      font-size: 24px;
+    }
+
+    .image-content {
+      height: 90px;
+    }
+
+    .footer {
+      width: 83.33%;
+    }
+
+    .floatright {
+      float: left;
+    }
+
+    #assunto {
+      width: 91.66%;
+    }
+
+    #nome {
+      width: 91.66%;
+    }
+
+    #mail {
+      width: 91.66%;
+    }
+
+    #endereco {
+      width: 91.66%;
+    }
+
+    #cidade {
+      width: 91.66%;
+    }
+
+    #texto {
+      width: 91.66%;
+    }
+}

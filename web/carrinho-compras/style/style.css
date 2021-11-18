@@ -1,0 +1,30 @@
+input[type=number]{
+  width: 50%;
+  padding: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.num-itens {
+  text-align: center;
+}
+
+th {
+  background-color: #ddd;
+  text-align: center;
+}
+
+.preco-unitario, .quantidade, .total-unitario {
+  text-align: center;
+}
+
+.descricao-produto {
+  width: 50%;
+}
+
+#valor-total {
+  font-weight: bold;
+  color: green;
+}
