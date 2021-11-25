@@ -1,0 +1,118 @@
+;/////////////////////////////////////////////////////////////////////////////////
+;// Code Generator: BoostC Compiler - http://www.sourceboost.com
+;// Version       : 7.20
+;// License Type  : Lite License (Unregistered)
+;// Limitations   : PIC12,PIC16 max code size:2048 words, max RAM banks:2, Non commercial use only
+;/////////////////////////////////////////////////////////////////////////////////
+
+
+Map File
+
+Program Memory usage
+====================
+
+Address  Length   Unique Name      Name
+-------  ------   -----------      ----
+00000000:00000004 _resetvector     _resetvector  
+00000004:0000000C _interruptVector _interruptVector  
+00000010:0000000C delay_ms_00000   delay_ms(unsigned char)  
+0000001C:0000000A delay_10us_00000 delay_10us(unsigned char)  
+00000026:00000027 LCD_Read_00000   LCD_Read(void)  
+0000004D:00000025 LCD_RawWri_00014 LCD_RawWrite(unsigned char)  
+00000072:00000013 LCD_Write_00000  LCD_Write(unsigned char)  
+00000085:0000000D __mul_8_8__00005 __mul_8_8__8(unsigned char,unsigned char)  
+00000092:00000017 LCD_RawWri_00013 LCD_RawWriteNibble(unsigned char)  
+000000A9:00000024 LCD_Printf_00000 LCD_Printf(unsigned char*)  
+000000CD:00000010 LCD_GotoXy_00000 LCD_GotoXy(unsigned char,unsigned char)  
+000000DD:0000000A LCD_Clear_00000  LCD_Clear(void)  
+000000E7:0000003C teste_00000      teste(void)  
+00000123:00000013 status_00000     status(void)  
+00000136:0000020C escreve_00000    escreve(void)  
+00000342:000001DC efeito_00000     efeito(void)  
+0000051E:000000EC cor_00000        cor(void)  
+0000060A:0000003D controle_00000   controle(void)  
+00000647:00000066 comando_00000    comando(void)  
+000006AD:00000042 LCD_Setup_00000  LCD_Setup(void)  
+000006EF:00000022 main             main(void)  
+00000711:00000003 _startup_00000   _startup(void)  
+00000714:00000021 interrupt        interrupt(void)  
+00000735:000000CB *Unused Block 
+
+Register usage
+==============
+
+Address  Bit Lengh Bit Mask   Unique Name                      Name
+-------  --------- --------   -----------                      ----
+00000000:00000008             gbl_indf                         indf
+00000001:00000008             gbl_tmr0                         tmr0
+00000002:00000008             gbl_pcl                          pcl
+00000003:00000008             gbl_status                       status
+00000004:00000008             gbl_fsr                          fsr
+00000005:00000008             gbl_porta                        porta
+00000006:00000008             gbl_portb                        portb
+00000007:00000001  0b00010000 LCD_Printf_00000_16_rs           rs
+0000000A:00000008             gbl_pclath                       pclath
+0000000B:00000008             gbl_intcon                       intcon
+0000000C:00000008             gbl_pir1                         pir1
+0000000D:00000008             gbl_pir2                         pir2
+0000000E:00000008             gbl_tmr1l                        tmr1l
+0000000F:00000008             gbl_tmr1h                        tmr1h
+00000010:00000008             gbl_t1con                        t1con
+00000011:00000008             gbl_tmr2                         tmr2
+00000012:00000008             gbl_t2con                        t2con
+00000015:00000008             gbl_ccpr1l                       ccpr1l
+00000016:00000008             gbl_ccpr1h                       ccpr1h
+00000017:00000008             gbl_ccp1con                      ccp1con
+00000018:00000008             gbl_rcsta                        rcsta
+00000019:00000008             gbl_txreg                        txreg
+0000001A:00000008             gbl_rcreg                        rcreg
+0000001E:00000008             gbl_adresh                       adresh
+0000001F:00000008             gbl_adcon0                       adcon0
+00000020:00000018             Int1BContext                     Int1BContext
+00000023:00000008             gbl_writeDelayType               writeDelayType
+00000024:00000008             gbl_contador                     contador
+00000025:00000008             gbl_delay                        delay
+00000026:00000008             gbl_segundo                      segundo
+00000027:00000008             gbl_estado                       estado
+00000028:00000008             gbl_controle                     controle
+00000029:00000008             gbl_stop                         stop
+0000002A:00000008             gbl_pause                        pause
+0000002B:00000008             gbl_cor                          cor
+0000002C:00000008             gbl_efeito                       efeito
+0000002D:00000008             gbl_lamp                         lamp
+0000002E:00000008             delay_ms_00000_arg_del           del
+0000002F:00000008             LCD_GotoXy_00000_arg_y           y
+00000030:00000008             LCD_GotoXy_00000_1_offset        offset
+00000031:00000008             CompTempVarRet373                $ret
+00000045:00000008             LCD_Printf_00000_1_pi            pi
+00000046:00000008             LCD_Printf_00000_1_c             c
+00000047:00000008             CompTempVar596                  
+00000048:00000008             LCD_RawWri_00014_arg_d           d
+00000049:00000001  0b00000001 LCD_RawWri_00014_2_flag          flag
+0000004A:00000008             CompTempVar621                  
+0000007F:00000008             Int1Context                      Int1Context
+00000081:00000008             gbl_option_reg                   option_reg
+00000085:00000008             gbl_trisa                        trisa
+00000086:00000008             gbl_trisb                        trisb
+00000087:00000008             LCD_RawWri_00014_7_tris          tris
+0000008C:00000008             gbl_pie1                         pie1
+0000008D:00000008             gbl_pie2                         pie2
+0000008E:00000008             gbl_pcon                         pcon
+00000092:00000008             gbl_pr2                          pr2
+00000098:00000008             gbl_txsta                        txsta
+00000099:00000008             gbl_spbrg                        spbrg
+0000009E:00000008             gbl_adresl                       adresl
+0000009F:00000008             gbl_adcon1                       adcon1
+0000010C:00000008             gbl_eedata                       eedata
+0000010D:00000008             gbl_eeadr                        eeadr
+0000010E:00000008             gbl_eedath                       eedath
+0000010F:00000008             gbl_eeadrh                       eeadrh
+0000018C:00000008             gbl_eecon1                       eecon1
+0000018D:00000008             gbl_eecon2                       eecon2
+
+
+Memory Usage Report
+===================
+RAM available:128 bytes, used:44 bytes (34.4%), free:84 bytes (65.6%), 
+Heap size:84 bytes, Heap max single alloc:51 bytes
+ROM available:2048 words, used:1845 words (90.1%), free:203 words (9.9%)

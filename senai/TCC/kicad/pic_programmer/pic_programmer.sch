@@ -1,0 +1,359 @@
+EESchema Schematic File Version 2  date 20/11/2012 00:46:13
+LIBS:BIBSCH
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title "Gravador de microcontroladores PIC"
+Date "20 nov 2012"
+Rev ""
+Comp "Geisse, Julio, Renan"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Connection ~ 1760 4840
+Wire Wire Line
+	1460 4840 1760 4840
+Connection ~ 3530 1690
+Connection ~ 3530 1980
+Wire Wire Line
+	3530 1500 3530 1980
+Wire Wire Line
+	2150 1980 2000 1980
+Wire Wire Line
+	2000 1980 2000 4740
+Wire Wire Line
+	2000 4740 1460 4740
+Wire Wire Line
+	2150 3640 2150 3940
+Wire Wire Line
+	2150 3940 1460 3940
+Wire Wire Line
+	10700 1050 10700 1080
+Connection ~ 5030 5270
+Wire Wire Line
+	5030 5120 5030 5270
+Wire Wire Line
+	4220 2740 4220 5270
+Wire Wire Line
+	4220 2740 3110 2740
+Wire Wire Line
+	7840 3640 7840 4040
+Connection ~ 1760 4440
+Wire Wire Line
+	1460 4440 1760 4440
+Connection ~ 1760 4040
+Wire Wire Line
+	1460 4040 1760 4040
+Connection ~ 1760 3640
+Wire Wire Line
+	1460 3640 1760 3640
+Wire Wire Line
+	1760 5090 1760 3240
+Wire Wire Line
+	1760 3240 1460 3240
+Wire Wire Line
+	6970 4620 6970 4740
+Wire Wire Line
+	5930 4420 5930 4620
+Wire Wire Line
+	5930 4620 6500 4620
+Wire Wire Line
+	6500 4620 6500 3840
+Connection ~ 6970 3640
+Wire Wire Line
+	7340 3640 6970 3640
+Wire Wire Line
+	6970 2350 6970 2480
+Wire Wire Line
+	6500 3440 6500 2350
+Wire Wire Line
+	5680 3640 6200 3640
+Wire Wire Line
+	6970 4220 6970 2880
+Wire Wire Line
+	5930 3920 5930 3640
+Connection ~ 5930 3640
+Wire Wire Line
+	3110 3640 5180 3640
+Wire Wire Line
+	6190 4740 6190 4620
+Connection ~ 6190 4620
+Wire Wire Line
+	1460 3440 1760 3440
+Connection ~ 1760 3440
+Wire Wire Line
+	1460 3840 1760 3840
+Connection ~ 1760 3840
+Wire Wire Line
+	1460 4240 1760 4240
+Connection ~ 1760 4240
+Wire Wire Line
+	1460 4640 1760 4640
+Connection ~ 1760 4640
+Wire Wire Line
+	6500 2350 7440 2350
+Connection ~ 6970 2350
+Wire Wire Line
+	4220 5270 7440 5270
+Wire Wire Line
+	5030 4490 5030 4620
+Wire Wire Line
+	3530 840  3530 1000
+Wire Wire Line
+	7440 1690 3530 1690
+Wire Wire Line
+	8600 5140 8600 5170
+Wire Wire Line
+	1460 4340 2080 4340
+Wire Wire Line
+	2080 4340 2080 2740
+Wire Wire Line
+	2080 2740 2150 2740
+Wire Wire Line
+	3110 1980 3900 1980
+Wire Wire Line
+	1460 4940 4860 4940
+Wire Wire Line
+	4860 4940 4860 1980
+$Comp
+L 7407 U2
+U 4 1 50A9A1E6
+P 4390 1980
+F 0 "U2" H 4320 1970 60  0000 C CNN
+F 1 "7407" H 4380 1790 60  0000 C CNN
+	4    4390 1980
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7407 U2
+U 1 1 50A9A1BD
+P 2640 3640
+F 0 "U2" H 2570 3630 60  0000 C CNN
+F 1 "7407" H 2630 3450 60  0000 C CNN
+	1    2640 3640
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7407 U2
+U 2 1 50A9A198
+P 2640 2740
+F 0 "U2" H 2570 2730 60  0000 C CNN
+F 1 "7407" H 2630 2550 60  0000 C CNN
+	2    2640 2740
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7407 U2
+U 3 1 50A9A0EE
+P 2640 1980
+F 0 "U2" H 2570 1970 60  0000 C CNN
+F 1 "7407" H 2630 1790 60  0000 C CNN
+	3    2640 1980
+	1    0    0    -1  
+$EndComp
+$Comp
+L DB25 J1
+U 1 1 50A99D1F
+P 1010 3740
+F 0 "J1" H 1060 5090 70  0000 C CNN
+F 1 "DB25" H 960 2390 70  0000 C CNN
+	1    1010 3740
+	-1   0    0    1   
+$EndComp
+Text GLabel 10600 4920 2    60   Input ~ 0
+MCLR
+Text GLabel 8600 5140 0    60   Input ~ 0
+DATA
+Text GLabel 8600 5270 0    60   Input ~ 0
+CLOCK
+Text GLabel 10700 1180 2    60   Input ~ 0
+CLOCK
+Text GLabel 10700 1050 2    60   Input ~ 0
+DATA
+Text GLabel 8600 1080 0    60   Input ~ 0
+MCLR
+Text GLabel 6410 6780 2    60   Input ~ 0
+DATA
+Text GLabel 4660 6480 0    60   Input ~ 0
+MCLR
+Text GLabel 6410 6930 2    60   Input ~ 0
+CLOCK
+Text GLabel 3260 6480 2    60   Input ~ 0
+DATA
+Text GLabel 1810 7180 0    60   Input ~ 0
+MCLR
+Text GLabel 3260 6880 2    60   Input ~ 0
+CLOCK
+$Comp
+L VDD .2
+U 1 1 50A16A17
+P 5030 4490
+F 0 ".2" H 5080 4490 60  0001 C CNN
+F 1 "5Vcc" H 5030 4590 60  0000 C CNN
+	1    5030 4490
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VDD .1
+U 1 1 50A16914
+P 3530 840
+F 0 ".1" H 3580 840 60  0001 C CNN
+F 1 "5Vcc" H 3530 940 60  0000 C CNN
+	1    3530 840 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VDD .4
+U 1 1 50A168D8
+P 6970 4740
+F 0 ".4" H 7020 4740 60  0001 C CNN
+F 1 "5Vcc" H 6970 4870 60  0000 C CNN
+	1    6970 4740
+	1    0    0    1   
+$EndComp
+$Comp
+L VDD .3
+U 1 1 50A16875
+P 6190 4740
+F 0 ".3" H 6240 4740 60  0001 C CNN
+F 1 "12Vcc" H 6190 4880 60  0000 C CNN
+	1    6190 4740
+	1    0    0    1   
+$EndComp
+$Comp
+L TERRA GND1
+U 1 1 50A1678A
+P 1760 5100
+F 0 "GND1" H 1770 5160 50  0001 C CNN
+F 1 "TERRA" H 1760 5010 50  0001 C CNN
+	1    1760 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TERRA GND2
+U 1 1 50A16778
+P 7840 4050
+F 0 "GND2" H 7850 4110 50  0001 C CNN
+F 1 "TERRA" H 7840 3960 50  0001 C CNN
+	1    7840 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L RES R2
+U 1 1 50A166BE
+P 5030 4870
+F 0 "R2" H 5140 4930 50  0000 C CNN
+F 1 "10K" H 5160 4840 50  0000 C CNN
+	1    5030 4870
+	1    0    0    -1  
+$EndComp
+Text GLabel 7440 2350 2    60   Input ~ 0
+MCLR
+Text GLabel 7440 1690 2    60   Input ~ 0
+DATA
+Text GLabel 7440 5270 2    60   Input ~ 0
+CLOCK
+$Comp
+L PIC_8_PINOS U1
+U 1 1 50A16535
+P 2560 6680
+F 0 "U1" H 2560 6680 60  0000 C CNN
+F 1 "PIC_8_PINOS" H 2560 7430 60  0000 C CNN
+	1    2560 6680
+	1    0    0    -1  
+$EndComp
+$Comp
+L PIC_40_PINOS U5
+U 1 1 50A1652E
+P 9650 2430
+F 0 "U5" H 9650 3930 70  0000 C CNN
+F 1 "PIC_40_PINOS" H 9650 880 70  0000 C CNN
+	1    9650 2430
+	1    0    0    -1  
+$EndComp
+$Comp
+L PIC_28_PINOS U4
+U 1 1 50A1652A
+P 9550 5820
+F 0 "U4" H 9750 4920 60  0000 C CNN
+F 1 "PIC_28_PINOS" H 9900 7020 60  0000 C CNN
+	1    9550 5820
+	1    0    0    -1  
+$EndComp
+$Comp
+L PIC_18_PINOS U3
+U 1 1 50A16524
+P 5560 6630
+F 0 "U3" H 5560 5880 60  0000 C CNN
+F 1 "PIC_18_PINOS" H 5560 7430 60  0000 C CNN
+	1    5560 6630
+	1    0    0    -1  
+$EndComp
+$Comp
+L TR_PNP Q1
+U 1 1 50A1651F
+P 6400 3640
+F 0 "Q1" H 6750 3600 60  0000 R CNN
+F 1 "BC327" H 6850 3700 60  0000 R CNN
+	1    6400 3640
+	1    0    0    1   
+$EndComp
+$Comp
+L LED D2
+U 1 1 50A16514
+P 6970 4420
+F 0 "D2" V 6990 4210 50  0000 C CNN
+F 1 "VD" V 6920 4210 50  0000 C CNN
+	1    6970 4420
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 50A16513
+P 6970 2680
+F 0 "D1" V 6930 2840 50  0000 C CNN
+F 1 "VM" V 7020 2850 50  0000 C CNN
+	1    6970 2680
+	0    1    1    0   
+$EndComp
+$Comp
+L RES R1
+U 1 1 50A1650F
+P 3530 1250
+F 0 "R1" H 3640 1320 50  0000 C CNN
+F 1 "10K" H 3670 1220 50  0000 C CNN
+	1    3530 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L RES R5
+U 1 1 50A1650E
+P 7590 3640
+F 0 "R5" V 7760 3640 50  0000 C CNN
+F 1 "2K2" V 7680 3640 50  0000 C CNN
+	1    7590 3640
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RES R3
+U 1 1 50A1650C
+P 5430 3640
+F 0 "R3" V 5590 3640 50  0000 C CNN
+F 1 "4K7" V 5510 3650 50  0000 C CNN
+	1    5430 3640
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RES R4
+U 1 1 50A16501
+P 5930 4170
+F 0 "R4" H 6030 4220 50  0000 C CNN
+F 1 "4K7" H 6050 4120 50  0000 C CNN
+	1    5930 4170
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

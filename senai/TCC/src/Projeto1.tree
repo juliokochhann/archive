@@ -1,0 +1,8 @@
+// SourceBoost Linker Call Tree Dump
+
+_startup:"NoSourceFile",line = 0
+{  main:"C:\Documents and Settings\Suporte\Desktop\burinha\Projeto1.c",line = 30
+  {    effect:"C:\Documents and Settings\Suporte\Desktop\burinha\Projeto1.c",line = 45
+    {      delay_ms:"NoSourceFile",line = 0
+      {      }    }  }}interrupt:"C:\Documents and Settings\Suporte\Desktop\burinha\Projeto1.c",line = 12
+{}

@@ -1,0 +1,23 @@
+[Settings]
+Active Directory=D:\Usuario\Eletrônica\Trabalhos diversos\Programa\
+Target=PIC16F870
+Active Compiler=BoostC
+Active Config=Debug
+Last ExtIdx=2
+Last Dir=D:\Usuario\Eletrônica\Microcontroladores\Source Boost\Programa1\
+Config=1
+Profiling=0
+Snapshot=0
+[Files]
+Count=1
+File0=PR2.c
+[Watch]
+Count=0
+[Watchpoint]
+Count=0
+[Register]
+Core=1
+Ports=1
+Interrupt=1
+Eeprom=1
+Misc=1

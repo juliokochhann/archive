@@ -1,0 +1,10 @@
+// SourceBoost Linker Function Resource Usage Dump
+
+#GLOBAL:"global",line = 0,ram = 7.0,rom = 0;
+effect(void):"C:\Documents and Settings\Suporte\Desktop\burinha\Projeto1.c",line = 48,ram = 2.0,rom = 19;
+interrupt(void):"C:\Documents and Settings\Suporte\Desktop\burinha\Projeto1.c",line = 14,ram = 0.0,rom = 28;
+main(void):"C:\Documents and Settings\Suporte\Desktop\burinha\Projeto1.c",line = 32,ram = 0.0,rom = 17;
+delay_ms(unsigned char):"NoSourceFile",line = 0,ram = 0.0,rom = 12;
+_startup(void):"NoSourceFile",line = 0,ram = 0.0,rom = 3;
+#HEAP_BLOCK: 0, 41, 86;
+#HEAP_BLOCK: 1, 160, 32;

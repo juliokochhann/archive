@@ -1,0 +1,26 @@
+// SourceBoost Linker Function Resource Usage Dump
+
+#GLOBAL:"global",line = 0,ram = 15.0,rom = 0;
+__mul_8_8__8(unsigned char,unsigned char):"C:\Prg\trunk\picantc\libc\mul.c",line = 71,ram = 4.0,rom = 13;
+teste(void):"D:\Usuario\Eletrônica\Microcontroladores\Source Boost\Projeto Final Rev.2\PR2.c",line = 84,ram = 1.0,rom = 60;
+controle(void):"D:\Usuario\Eletrônica\Microcontroladores\Source Boost\Projeto Final Rev.2\PR2.c",line = 112,ram = 1.0,rom = 61;
+status(void):"D:\Usuario\Eletrônica\Microcontroladores\Source Boost\Projeto Final Rev.2\PR2.c",line = 139,ram = 0.0,rom = 19;
+comando(void):"D:\Usuario\Eletrônica\Microcontroladores\Source Boost\Projeto Final Rev.2\PR2.c",line = 159,ram = 1.0,rom = 102;
+escreve(void):"D:\Usuario\Eletrônica\Microcontroladores\Source Boost\Projeto Final Rev.2\PR2.c",line = 376,ram = 21.0,rom = 524;
+LCD_GotoXy(unsigned char,unsigned char):"C:\Program Files (x86)\SourceBoost\include\lcd_driver.h",line = 746,ram = 3.0,rom = 16;
+LCD_Printf(unsigned char*):"C:\Program Files (x86)\SourceBoost\include\lcd_driver.h",line = 553,ram = 5.0,rom = 36;
+LCD_Clear(void):"C:\Program Files (x86)\SourceBoost\include\lcd_driver.h",line = 449,ram = 0.0,rom = 10;
+cor(void):"D:\Usuario\Eletrônica\Microcontroladores\Source Boost\Projeto Final Rev.2\PR2.c",line = 211,ram = 16.0,rom = 236;
+efeito(void):"D:\Usuario\Eletrônica\Microcontroladores\Source Boost\Projeto Final Rev.2\PR2.c",line = 271,ram = 12.0,rom = 476;
+interrupt(void):"D:\Usuario\Eletrônica\Microcontroladores\Source Boost\Projeto Final Rev.2\PR2.c",line = 25,ram = 0.0,rom = 33;
+main(void):"D:\Usuario\Eletrônica\Microcontroladores\Source Boost\Projeto Final Rev.2\PR2.c",line = 46,ram = 0.0,rom = 34;
+LCD_Setup(void):"C:\Program Files (x86)\SourceBoost\include\lcd_driver.h",line = 459,ram = 0.1,rom = 66;
+LCD_RawWriteNibble(unsigned char):"C:\Program Files (x86)\SourceBoost\include\lcd_driver.h",line = 290,ram = 0.0,rom = 23;
+LCD_Read(void):"C:\Program Files (x86)\SourceBoost\include\lcd_driver.h",line = 213,ram = 2.0,rom = 39;
+LCD_Write(unsigned char):"C:\Program Files (x86)\SourceBoost\include\lcd_driver.h",line = 423,ram = 1.1,rom = 19;
+LCD_RawWrite(unsigned char):"C:\Program Files (x86)\SourceBoost\include\lcd_driver.h",line = 367,ram = 2.1,rom = 37;
+delay_10us(unsigned char):"NoSourceFile",line = 0,ram = 0.0,rom = 10;
+delay_ms(unsigned char):"NoSourceFile",line = 0,ram = 0.0,rom = 12;
+_startup(void):"NoSourceFile",line = 0,ram = 0.0,rom = 3;
+#HEAP_BLOCK: 0, 75, 52;
+#HEAP_BLOCK: 1, 160, 32;
