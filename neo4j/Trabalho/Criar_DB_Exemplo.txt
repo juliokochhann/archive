@@ -1,0 +1,7 @@
+CREATE (a:Person {name:'Tom Hanks'})
+CREATE (b:Person {name:'Ron Howard'})
+CREATE (c:Movie {title:'The DaVinci Code'})
+CREATE
+	(a)-[:ACTED_IN {roles:['Robert Langdon']}]->(c),
+	(b)-[:DIRECTED]->(c),
+	(a)-[:KNOWS {since:[1987]}]->(b)

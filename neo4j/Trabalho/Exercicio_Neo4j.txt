@@ -1,0 +1,19 @@
+CREATE (:Person {name:'Fabio',age:30,sex:'masculino',city:'Caxias',likes:['Livros','Series','Esportes','Musica','Teatro']})
+
+CREATE (:Person {name:'Gabriele',age:19,sex:'feminino',city:'Farroupilha',likes:['Pets','Veterinaria','Musica','Surf','Praia']})
+
+CREATE (:Person {name:'Alice',age:32,sex:'feminino',city:'Caxias',likes:['Dança','Teatro','TV','Series','Pedal']})
+
+CREATE (:Person {name:'Julio',age:21,sex:'masculino',city:'Carlos Barbosa',likes:['Filmes','Musica','Bikes','Livros','Series']})
+
+CREATE (:Person {name:'Rodrigo',age:18,sex:'masculino',city:'Farroupilha',likes:['Musica','Carros','Pets','Academia','Viagens']})
+
+CREATE (:Person {name:'Franciele',age:23,sex:'feminino',city:'Carlos Barbosa',likes:['Livros','Passeios','Series','Bikes','Musica']})
+
+MATCH (a:Person),(b:Person)
+WHERE a.name <> b.name AND ANY (x IN a.likes WHERE x in b.likes)
+AND a.city = b.city AND a.sex <> b.sex
+CREATE UNIQUE (a)-[:MATCHES]->(b)
+
+MATCH (a:Person)-[:MATCHES]->(b) WHERE a.name = 'Julio'
+RETURN b.name AS Nome, b.age AS Idade, b.city AS Cidadae, b.likes AS Gostos
